@@ -3,13 +3,13 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-function getPromise <T> () :Promise<Array<string | number>> {
+function getPromise  () :Promise<Array<string | number>> {
   return new Promise((resolve) => {
     resolve(['Text', 50]);
   });
 }
 
-getPromise<string | number> ()
+getPromise ()
 .then((data) => {
   console.log(data);
 });
